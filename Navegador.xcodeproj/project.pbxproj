@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB92E148188E47CC005A52E2 /* FavoritosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB92E146188E47CC005A52E2 /* FavoritosViewController.m */; };
+		EB92E149188E47CC005A52E2 /* FavoritosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB92E147188E47CC005A52E2 /* FavoritosViewController.xib */; };
+		EB92E14D188E4C53005A52E2 /* HistoricoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB92E14B188E4C53005A52E2 /* HistoricoViewController.m */; };
+		EB92E14E188E4C53005A52E2 /* HistoricoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB92E14C188E4C53005A52E2 /* HistoricoViewController.xib */; };
+		EB92E152188E4E8C005A52E2 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB92E150188E4E8C005A52E2 /* WebViewController.m */; };
+		EB92E153188E4E8C005A52E2 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB92E151188E4E8C005A52E2 /* WebViewController.xib */; };
 		EB9B45F6188AEB4E0006C0F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B45F5188AEB4E0006C0F4 /* Foundation.framework */; };
 		EB9B45F8188AEB4E0006C0F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B45F7188AEB4E0006C0F4 /* CoreGraphics.framework */; };
 		EB9B45FA188AEB4E0006C0F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B45F9188AEB4E0006C0F4 /* UIKit.framework */; };
@@ -21,6 +27,14 @@
 		EB9B461B188AEB4E0006C0F4 /* NavegadorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9B461A188AEB4E0006C0F4 /* NavegadorTests.m */; };
 		EB9B462A188AEC910006C0F4 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9B4628188AEC910006C0F4 /* IndexViewController.m */; };
 		EB9B462B188AEC910006C0F4 /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9B4629188AEC910006C0F4 /* IndexViewController.xib */; };
+		EBB66CC0188AF6E7008FAC6E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB66CBF188AF6E7008FAC6E /* libsqlite3.dylib */; };
+		EBB66CC4188AF792008FAC6E /* BdController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB66CC3188AF792008FAC6E /* BdController.m */; };
+		EBEC5BB3188E5C5A0094EF11 /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BB2188E5C5A0094EF11 /* previous.png */; };
+		EBEC5BB5188E5C610094EF11 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BB4188E5C600094EF11 /* forward.png */; };
+		EBEC5BB7188E5D330094EF11 /* go.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BB6188E5D330094EF11 /* go.png */; };
+		EBEC5BB9188E5FCF0094EF11 /* historico.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BB8188E5FCF0094EF11 /* historico.png */; };
+		EBEC5BBB188E5FD50094EF11 /* favoritos.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BBA188E5FD50094EF11 /* favoritos.png */; };
+		EBEC5BBD188E5FDA0094EF11 /* navegar.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BBC188E5FDA0094EF11 /* navegar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB92E145188E47CC005A52E2 /* FavoritosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritosViewController.h; sourceTree = "<group>"; };
+		EB92E146188E47CC005A52E2 /* FavoritosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritosViewController.m; sourceTree = "<group>"; };
+		EB92E147188E47CC005A52E2 /* FavoritosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritosViewController.xib; sourceTree = "<group>"; };
+		EB92E14A188E4C53005A52E2 /* HistoricoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricoViewController.h; sourceTree = "<group>"; };
+		EB92E14B188E4C53005A52E2 /* HistoricoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricoViewController.m; sourceTree = "<group>"; };
+		EB92E14C188E4C53005A52E2 /* HistoricoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoricoViewController.xib; sourceTree = "<group>"; };
+		EB92E14F188E4E8C005A52E2 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		EB92E150188E4E8C005A52E2 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		EB92E151188E4E8C005A52E2 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		EB9B45F2188AEB4E0006C0F4 /* Navegador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navegador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9B45F5188AEB4E0006C0F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB9B45F7188AEB4E0006C0F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +76,15 @@
 		EB9B4627188AEC910006C0F4 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
 		EB9B4628188AEC910006C0F4 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
 		EB9B4629188AEC910006C0F4 /* IndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
+		EBB66CBF188AF6E7008FAC6E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EBB66CC2188AF792008FAC6E /* BdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BdController.h; sourceTree = "<group>"; };
+		EBB66CC3188AF792008FAC6E /* BdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BdController.m; sourceTree = "<group>"; };
+		EBEC5BB2188E5C5A0094EF11 /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previous.png; sourceTree = "<group>"; };
+		EBEC5BB4188E5C600094EF11 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		EBEC5BB6188E5D330094EF11 /* go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = go.png; sourceTree = "<group>"; };
+		EBEC5BB8188E5FCF0094EF11 /* historico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = historico.png; sourceTree = "<group>"; };
+		EBEC5BBA188E5FD50094EF11 /* favoritos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favoritos.png; sourceTree = "<group>"; };
+		EBEC5BBC188E5FDA0094EF11 /* navegar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navegar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB66CC0188AF6E7008FAC6E /* libsqlite3.dylib in Frameworks */,
 				EB9B45F8188AEB4E0006C0F4 /* CoreGraphics.framework in Frameworks */,
 				EB9B45FA188AEB4E0006C0F4 /* UIKit.framework in Frameworks */,
 				EB9B45F6188AEB4E0006C0F4 /* Foundation.framework in Frameworks */,
@@ -101,6 +134,7 @@
 		EB9B45F4188AEB4E0006C0F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBB66CBF188AF6E7008FAC6E /* libsqlite3.dylib */,
 				EB9B45F5188AEB4E0006C0F4 /* Foundation.framework */,
 				EB9B45F7188AEB4E0006C0F4 /* CoreGraphics.framework */,
 				EB9B45F9188AEB4E0006C0F4 /* UIKit.framework */,
@@ -112,6 +146,8 @@
 		EB9B45FB188AEB4E0006C0F4 /* Navegador */ = {
 			isa = PBXGroup;
 			children = (
+				EBEC5BAF188E5C400094EF11 /* Images */,
+				EBB66CC1188AF729008FAC6E /* DAO */,
 				EB9B4626188AEB840006C0F4 /* Controller */,
 				EB9B4625188AEB800006C0F4 /* View */,
 				EB9B4624188AEB7B0006C0F4 /* Model */,
@@ -162,6 +198,9 @@
 		EB9B4625188AEB800006C0F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB92E151188E4E8C005A52E2 /* WebViewController.xib */,
+				EB92E14C188E4C53005A52E2 /* HistoricoViewController.xib */,
+				EB92E147188E47CC005A52E2 /* FavoritosViewController.xib */,
 				EB9B4629188AEC910006C0F4 /* IndexViewController.xib */,
 			);
 			name = View;
@@ -172,8 +211,36 @@
 			children = (
 				EB9B4627188AEC910006C0F4 /* IndexViewController.h */,
 				EB9B4628188AEC910006C0F4 /* IndexViewController.m */,
+				EB92E145188E47CC005A52E2 /* FavoritosViewController.h */,
+				EB92E146188E47CC005A52E2 /* FavoritosViewController.m */,
+				EB92E14A188E4C53005A52E2 /* HistoricoViewController.h */,
+				EB92E14B188E4C53005A52E2 /* HistoricoViewController.m */,
+				EB92E14F188E4E8C005A52E2 /* WebViewController.h */,
+				EB92E150188E4E8C005A52E2 /* WebViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		EBB66CC1188AF729008FAC6E /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				EBB66CC2188AF792008FAC6E /* BdController.h */,
+				EBB66CC3188AF792008FAC6E /* BdController.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		EBEC5BAF188E5C400094EF11 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EBEC5BBC188E5FDA0094EF11 /* navegar.png */,
+				EBEC5BBA188E5FD50094EF11 /* favoritos.png */,
+				EBEC5BB8188E5FCF0094EF11 /* historico.png */,
+				EBEC5BB6188E5D330094EF11 /* go.png */,
+				EBEC5BB4188E5C600094EF11 /* forward.png */,
+				EBEC5BB2188E5C5A0094EF11 /* previous.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +318,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB92E14E188E4C53005A52E2 /* HistoricoViewController.xib in Resources */,
+				EBEC5BB3188E5C5A0094EF11 /* previous.png in Resources */,
+				EB92E149188E47CC005A52E2 /* FavoritosViewController.xib in Resources */,
+				EBEC5BBB188E5FD50094EF11 /* favoritos.png in Resources */,
 				EB9B462B188AEC910006C0F4 /* IndexViewController.xib in Resources */,
+				EBEC5BB5188E5C610094EF11 /* forward.png in Resources */,
+				EB92E153188E4E8C005A52E2 /* WebViewController.xib in Resources */,
+				EBEC5BB9188E5FCF0094EF11 /* historico.png in Resources */,
 				EB9B4600188AEB4E0006C0F4 /* InfoPlist.strings in Resources */,
 				EB9B4608188AEB4E0006C0F4 /* Images.xcassets in Resources */,
+				EBEC5BB7188E5D330094EF11 /* go.png in Resources */,
+				EBEC5BBD188E5FDA0094EF11 /* navegar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +349,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9B4606188AEB4E0006C0F4 /* AppDelegate.m in Sources */,
+				EB92E152188E4E8C005A52E2 /* WebViewController.m in Sources */,
 				EB9B4602188AEB4E0006C0F4 /* main.m in Sources */,
 				EB9B462A188AEC910006C0F4 /* IndexViewController.m in Sources */,
+				EB92E148188E47CC005A52E2 /* FavoritosViewController.m in Sources */,
+				EBB66CC4188AF792008FAC6E /* BdController.m in Sources */,
+				EB92E14D188E4C53005A52E2 /* HistoricoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +555,7 @@
 				EB9B4620188AEB4E0006C0F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB9B4621188AEB4E0006C0F4 /* Build configuration list for PBXNativeTarget "NavegadorTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +564,7 @@
 				EB9B4623188AEB4E0006C0F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
