@@ -11,6 +11,7 @@
 #import "FavoritosViewController.h"
 #import "HistoricoViewController.h"
 #import "WebViewController.h"
+#import "ItemHistorico.h"
 @interface IndexViewController ()
 
 @end
@@ -153,6 +154,20 @@ static WebViewController * wvc;
     [wvc goUrl:url];
     [txtField resignFirstResponder];
     [self openNavegacao:sender];
+    
+    /* Insere no histórico */
+    NSDate *currDate = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *dateString = [dateFormatter stringFromDate:currDate];
+    
+    ItemHistorico *item = [[ItemHistorico alloc]init];
+    
+    [item setUrl: txtField.text];
+    [item setDate: dateString];
+    
+    BdController *bd = [[BdController alloc]init];
+    [bd insertIntoHistoric:item];
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
+#import "ItemHistorico.h"
 
 @interface BdController : NSObject
 
 @property (strong, nonatomic) NSString *databasePath;
 @property (nonatomic) sqlite3 *DB;
-
+- (BOOL) insertIntoHistoric: (ItemHistorico *)item;
+- (NSMutableArray *) getAllHistoric;
 
 @end
 

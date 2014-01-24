@@ -7,6 +7,7 @@
 //
 
 #import "BdController.h"
+#import "ItemHistorico.h"
 
 @implementation BdController
 
@@ -50,6 +51,65 @@
     }
     return self;
 }
+
+/* 
+ * Métodos do Histórico
+ */
+
+- (BOOL) insertIntoHistoric: (ItemHistorico *)item
+{
+    const char *dbpath = [_databasePath UTF8String];
+    BOOL state = YES;
+    char *errMsg;
+    
+    if (sqlite3_open(dbpath, &_DB) == SQLITE_OK) {
+
+            NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO historico (link, data) VALUES (\"%@\", \"%@\")",  item.url, item.date];
+            const char *insert_stmt = [insertSQL UTF8String];
+            sqlite3_exec(_DB, insert_stmt, NULL, NULL, &errMsg);
+
+        sqlite3_close(_DB);
+    } else {
+        state = NO;
+    }
+    
+    return state;
+}
+
+- (NSMutableArray *) getAllHistoric
+{
+    const char *dbpath = [_databasePath UTF8String];
+    sqlite3_stmt *statement;
+    
+    NSMutableArray *historico = [[NSMutableArray alloc]init];
+    
+    if (sqlite3_open(dbpath, &_DB) == SQLITE_OK) {
+        const char *query_stmt = [@"SELECT id, link, data FROM historico ORDER BY data" UTF8String];
+        if (sqlite3_prepare_v2(_DB, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
+            
+            while (sqlite3_step(statement) == SQLITE_ROW) {
+                int id = sqlite3_column_int(statement, 0);
+                NSString *url = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
+                NSString *date = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
+                
+                ItemHistorico *item = [[ItemHistorico alloc]init];
+                [item setIdItem:id];
+                [item setUrl:url];
+                [item setDate:date];
+                
+                [historico addObject:item];
+                
+            }
+            sqlite3_finalize(statement);
+        }
+        sqlite3_close(_DB);
+    }
+    
+    return historico;
+}
+
+
+
 
 
 @end

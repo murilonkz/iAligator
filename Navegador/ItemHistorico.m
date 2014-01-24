@@ -1,13 +1,17 @@
 //
-//  HistoricoViewController.h
+//  ItemHistorico.m
 //  Navegador
 //
 //  Created by Murilo Campaner on 21/01/14.
 //  Copyright (c) 2014 Murilo Campaner. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ItemHistorico.h"
 
-@interface HistoricoViewController : UITableViewController
+@implementation ItemHistorico
+
+
+
+
 
 @end
