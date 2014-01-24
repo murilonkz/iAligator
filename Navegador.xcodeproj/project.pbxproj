@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		EB92E148188E47CC005A52E2 /* FavoritosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB92E146188E47CC005A52E2 /* FavoritosViewController.m */; };
 		EB92E149188E47CC005A52E2 /* FavoritosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB92E147188E47CC005A52E2 /* FavoritosViewController.xib */; };
-		EB92E14D188E4C53005A52E2 /* HistoricoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB92E14B188E4C53005A52E2 /* HistoricoViewController.m */; };
-		EB92E14E188E4C53005A52E2 /* HistoricoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB92E14C188E4C53005A52E2 /* HistoricoViewController.xib */; };
 		EB92E152188E4E8C005A52E2 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB92E150188E4E8C005A52E2 /* WebViewController.m */; };
 		EB92E153188E4E8C005A52E2 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB92E151188E4E8C005A52E2 /* WebViewController.xib */; };
 		EB9B45F6188AEB4E0006C0F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B45F5188AEB4E0006C0F4 /* Foundation.framework */; };
@@ -35,6 +33,9 @@
 		EBEC5BB9188E5FCF0094EF11 /* historico.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BB8188E5FCF0094EF11 /* historico.png */; };
 		EBEC5BBB188E5FD50094EF11 /* favoritos.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BBA188E5FD50094EF11 /* favoritos.png */; };
 		EBEC5BBD188E5FDA0094EF11 /* navegar.png in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BBC188E5FDA0094EF11 /* navegar.png */; };
+		EBEC5BC1188E73D60094EF11 /* HistoricoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC5BBF188E73D60094EF11 /* HistoricoViewController.m */; };
+		EBEC5BC2188E73D60094EF11 /* HistoricoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBEC5BC0188E73D60094EF11 /* HistoricoViewController.xib */; };
+		EBEC5BC8188E77820094EF11 /* ItemHistorico.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEC5BC7188E77820094EF11 /* ItemHistorico.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +52,6 @@
 		EB92E145188E47CC005A52E2 /* FavoritosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritosViewController.h; sourceTree = "<group>"; };
 		EB92E146188E47CC005A52E2 /* FavoritosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritosViewController.m; sourceTree = "<group>"; };
 		EB92E147188E47CC005A52E2 /* FavoritosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritosViewController.xib; sourceTree = "<group>"; };
-		EB92E14A188E4C53005A52E2 /* HistoricoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricoViewController.h; sourceTree = "<group>"; };
-		EB92E14B188E4C53005A52E2 /* HistoricoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricoViewController.m; sourceTree = "<group>"; };
-		EB92E14C188E4C53005A52E2 /* HistoricoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoricoViewController.xib; sourceTree = "<group>"; };
 		EB92E14F188E4E8C005A52E2 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		EB92E150188E4E8C005A52E2 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		EB92E151188E4E8C005A52E2 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
@@ -85,6 +83,11 @@
 		EBEC5BB8188E5FCF0094EF11 /* historico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = historico.png; sourceTree = "<group>"; };
 		EBEC5BBA188E5FD50094EF11 /* favoritos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favoritos.png; sourceTree = "<group>"; };
 		EBEC5BBC188E5FDA0094EF11 /* navegar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navegar.png; sourceTree = "<group>"; };
+		EBEC5BBE188E73D60094EF11 /* HistoricoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricoViewController.h; sourceTree = "<group>"; };
+		EBEC5BBF188E73D60094EF11 /* HistoricoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricoViewController.m; sourceTree = "<group>"; };
+		EBEC5BC0188E73D60094EF11 /* HistoricoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoricoViewController.xib; sourceTree = "<group>"; };
+		EBEC5BC6188E77820094EF11 /* ItemHistorico.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemHistorico.h; sourceTree = "<group>"; };
+		EBEC5BC7188E77820094EF11 /* ItemHistorico.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemHistorico.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +194,8 @@
 		EB9B4624188AEB7B0006C0F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBEC5BC6188E77820094EF11 /* ItemHistorico.h */,
+				EBEC5BC7188E77820094EF11 /* ItemHistorico.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,8 +203,8 @@
 		EB9B4625188AEB800006C0F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EBEC5BC0188E73D60094EF11 /* HistoricoViewController.xib */,
 				EB92E151188E4E8C005A52E2 /* WebViewController.xib */,
-				EB92E14C188E4C53005A52E2 /* HistoricoViewController.xib */,
 				EB92E147188E47CC005A52E2 /* FavoritosViewController.xib */,
 				EB9B4629188AEC910006C0F4 /* IndexViewController.xib */,
 			);
@@ -213,10 +218,10 @@
 				EB9B4628188AEC910006C0F4 /* IndexViewController.m */,
 				EB92E145188E47CC005A52E2 /* FavoritosViewController.h */,
 				EB92E146188E47CC005A52E2 /* FavoritosViewController.m */,
-				EB92E14A188E4C53005A52E2 /* HistoricoViewController.h */,
-				EB92E14B188E4C53005A52E2 /* HistoricoViewController.m */,
 				EB92E14F188E4E8C005A52E2 /* WebViewController.h */,
 				EB92E150188E4E8C005A52E2 /* WebViewController.m */,
+				EBEC5BBE188E73D60094EF11 /* HistoricoViewController.h */,
+				EBEC5BBF188E73D60094EF11 /* HistoricoViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -318,7 +323,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB92E14E188E4C53005A52E2 /* HistoricoViewController.xib in Resources */,
 				EBEC5BB3188E5C5A0094EF11 /* previous.png in Resources */,
 				EB92E149188E47CC005A52E2 /* FavoritosViewController.xib in Resources */,
 				EBEC5BBB188E5FD50094EF11 /* favoritos.png in Resources */,
@@ -326,6 +330,7 @@
 				EBEC5BB5188E5C610094EF11 /* forward.png in Resources */,
 				EB92E153188E4E8C005A52E2 /* WebViewController.xib in Resources */,
 				EBEC5BB9188E5FCF0094EF11 /* historico.png in Resources */,
+				EBEC5BC2188E73D60094EF11 /* HistoricoViewController.xib in Resources */,
 				EB9B4600188AEB4E0006C0F4 /* InfoPlist.strings in Resources */,
 				EB9B4608188AEB4E0006C0F4 /* Images.xcassets in Resources */,
 				EBEC5BB7188E5D330094EF11 /* go.png in Resources */,
@@ -353,8 +358,9 @@
 				EB9B4602188AEB4E0006C0F4 /* main.m in Sources */,
 				EB9B462A188AEC910006C0F4 /* IndexViewController.m in Sources */,
 				EB92E148188E47CC005A52E2 /* FavoritosViewController.m in Sources */,
+				EBEC5BC8188E77820094EF11 /* ItemHistorico.m in Sources */,
 				EBB66CC4188AF792008FAC6E /* BdController.m in Sources */,
-				EB92E14D188E4C53005A52E2 /* HistoricoViewController.m in Sources */,
+				EBEC5BC1188E73D60094EF11 /* HistoricoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,4 @@
 @implementation ItemHistorico
 
 
-
-
-
 @end
