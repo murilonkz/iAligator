@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBD274011892D8BA004DF3DD /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = DBD274001892D8BA004DF3DD /* hamburger.png */; };
+		DBD274041892DE1C004DF3DD /* ItemFavorito.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD274031892DE1C004DF3DD /* ItemFavorito.m */; };
 		EB92E148188E47CC005A52E2 /* FavoritosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB92E146188E47CC005A52E2 /* FavoritosViewController.m */; };
 		EB92E149188E47CC005A52E2 /* FavoritosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB92E147188E47CC005A52E2 /* FavoritosViewController.xib */; };
 		EB92E152188E4E8C005A52E2 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB92E150188E4E8C005A52E2 /* WebViewController.m */; };
@@ -49,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DBD274001892D8BA004DF3DD /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
+		DBD274021892DE1C004DF3DD /* ItemFavorito.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemFavorito.h; sourceTree = "<group>"; };
+		DBD274031892DE1C004DF3DD /* ItemFavorito.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemFavorito.m; sourceTree = "<group>"; };
 		EB92E145188E47CC005A52E2 /* FavoritosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritosViewController.h; sourceTree = "<group>"; };
 		EB92E146188E47CC005A52E2 /* FavoritosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritosViewController.m; sourceTree = "<group>"; };
 		EB92E147188E47CC005A52E2 /* FavoritosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritosViewController.xib; sourceTree = "<group>"; };
@@ -196,6 +201,8 @@
 			children = (
 				EBEC5BC6188E77820094EF11 /* ItemHistorico.h */,
 				EBEC5BC7188E77820094EF11 /* ItemHistorico.m */,
+				DBD274021892DE1C004DF3DD /* ItemFavorito.h */,
+				DBD274031892DE1C004DF3DD /* ItemFavorito.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -238,6 +245,7 @@
 		EBEC5BAF188E5C400094EF11 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DBD274001892D8BA004DF3DD /* hamburger.png */,
 				EBEC5BBC188E5FDA0094EF11 /* navegar.png */,
 				EBEC5BBA188E5FD50094EF11 /* favoritos.png */,
 				EBEC5BB8188E5FCF0094EF11 /* historico.png */,
@@ -325,6 +333,7 @@
 			files = (
 				EBEC5BB3188E5C5A0094EF11 /* previous.png in Resources */,
 				EB92E149188E47CC005A52E2 /* FavoritosViewController.xib in Resources */,
+				DBD274011892D8BA004DF3DD /* hamburger.png in Resources */,
 				EBEC5BBB188E5FD50094EF11 /* favoritos.png in Resources */,
 				EB9B462B188AEC910006C0F4 /* IndexViewController.xib in Resources */,
 				EBEC5BB5188E5C610094EF11 /* forward.png in Resources */,
@@ -355,6 +364,7 @@
 			files = (
 				EB9B4606188AEB4E0006C0F4 /* AppDelegate.m in Sources */,
 				EB92E152188E4E8C005A52E2 /* WebViewController.m in Sources */,
+				DBD274041892DE1C004DF3DD /* ItemFavorito.m in Sources */,
 				EB9B4602188AEB4E0006C0F4 /* main.m in Sources */,
 				EB9B462A188AEC910006C0F4 /* IndexViewController.m in Sources */,
 				EB92E148188E47CC005A52E2 /* FavoritosViewController.m in Sources */,

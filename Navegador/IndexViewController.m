@@ -63,6 +63,16 @@ static WebViewController * wvc;
     [self closeMenu];
 }
 
+- (IBAction)openMenuIcon:(id)sender {
+    if(!isShown){
+        [self openMenu];
+    }else{
+        [self closeMenu];
+    }
+    
+}
+
+
 - (IBAction)openFavoritos:(id)sender {
     [self removeAllContent];
     

@@ -8,6 +8,7 @@
 
 #import "BdController.h"
 #import "ItemHistorico.h"
+#import "ItemFavorito.h"
 
 @implementation BdController
 
@@ -108,6 +109,96 @@
     return historico;
 }
 
+
+/*
+ * Métodos do Favorito
+ */
+
+- (BOOL) insertIntoFavorito:(ItemFavorito *)item
+{
+    const char *dbpath = [_databasePath UTF8String];
+    BOOL state = YES;
+    char *errMsg;
+    
+    if (sqlite3_open(dbpath, &_DB) == SQLITE_OK) {
+        
+        NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO favoritos (name, link) VALUES (\"%@\", \"%@\")",  item.name, item.link];
+        const char *insert_stmt = [insertSQL UTF8String];
+        sqlite3_exec(_DB, insert_stmt, NULL, NULL, &errMsg);
+        
+        sqlite3_close(_DB);
+    } else {
+        state = NO;
+    }
+    
+    return state;
+}
+
+- (NSMutableArray *) getAllFavoritos
+{
+    const char *dbpath = [_databasePath UTF8String];
+    sqlite3_stmt *statement;
+    
+    NSMutableArray *favoritos = [[NSMutableArray alloc]init];
+    
+    if (sqlite3_open(dbpath, &_DB) == SQLITE_OK) {
+        const char *query_stmt = [@"SELECT id, name, link FROM favoritos ORDER BY data" UTF8String];
+        if (sqlite3_prepare_v2(_DB, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
+            
+            while (sqlite3_step(statement) == SQLITE_ROW) {
+                int id = sqlite3_column_int(statement, 0);
+                NSString *name = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
+                NSString *link = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
+                
+                ItemFavorito *item = [[ItemFavorito alloc]init];
+                [item setIdItem:id];
+                [item setName:name];
+                [item setLink:link];
+                
+                [favoritos addObject:item];
+                
+            }
+            sqlite3_finalize(statement);
+        }
+        sqlite3_close(_DB);
+    }
+    
+    return favoritos;
+}
+
+
+- (NSMutableArray *) findFavorito
+{
+    const char *dbpath = [_databasePath UTF8String];
+    sqlite3_stmt *statement;
+    
+    NSMutableArray *favoritos = [[NSMutableArray alloc]init];
+    
+    if (sqlite3_open(dbpath, &_DB) == SQLITE_OK) {
+//        NSString *insertSQL = [NSString stringWithFormat:@"SELECT * INTO favoritos WHERE id (\"%@\")", item.name];
+        const char *query_stmt = [@"SELECT id, name, link FROM favoritos ORDER BY data" UTF8String];
+        if (sqlite3_prepare_v2(_DB, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
+            
+            while (sqlite3_step(statement) == SQLITE_ROW) {
+                int id = sqlite3_column_int(statement, 0);
+                NSString *name = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
+                NSString *link = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
+                
+                ItemFavorito *item = [[ItemFavorito alloc]init];
+                [item setIdItem:id];
+                [item setName:name];
+                [item setLink:link];
+                
+                [favoritos addObject:item];
+                
+            }
+            sqlite3_finalize(statement);
+        }
+        sqlite3_close(_DB);
+    }
+    
+    return favoritos;
+}
 
 
 

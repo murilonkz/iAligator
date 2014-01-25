@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FavoritosViewController : UIViewController
+@interface FavoritosViewController : UITableViewController
 
 
 @end

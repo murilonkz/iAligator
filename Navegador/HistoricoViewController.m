@@ -9,6 +9,7 @@
 #import "HistoricoViewController.h"
 #import "ItemHistorico.h"
 #import "BdController.h"
+
 @interface HistoricoViewController ()
 
 @end
@@ -49,14 +50,11 @@ static NSMutableArray * historic;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return historic.count;
 }

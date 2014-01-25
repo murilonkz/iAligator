@@ -15,7 +15,9 @@
 @property (strong, nonatomic) NSString *databasePath;
 @property (nonatomic) sqlite3 *DB;
 - (BOOL) insertIntoHistoric: (ItemHistorico *)item;
+- (BOOL) insertIntoFavorito: (ItemHistorico *)item;
 - (NSMutableArray *) getAllHistoric;
+- (NSMutableArray *) getAllFavoritos;
 
 @end
 

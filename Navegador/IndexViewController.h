@@ -18,5 +18,7 @@
 - (IBAction)openFavoritos:(id)sender;
 - (IBAction)openHistorico:(id)sender;
 - (IBAction)openNavegacao:(id)sender;
+- (IBAction)openMenuIcon:(id)sender;
+-(void)openMenu;
 - (void) removeAllContent;
 @end

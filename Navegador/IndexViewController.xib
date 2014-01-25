@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndexViewController">
@@ -21,6 +21,12 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
+                        <barButtonItem image="hamburger.png" id="lcp-cs-ZIp">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="openMenuIcon:" destination="-1" id="x99-dn-uEP"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem image="previous.png" id="umc-hQ-LoE">
                             <connections>
                                 <action selector="goBack:" destination="-1" id="eph-3o-iEY"/>
@@ -33,7 +39,7 @@
                         </barButtonItem>
                         <barButtonItem style="plain" id="7EG-c6-Pif">
                             <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="6j0-Q4-R7O">
-                                <rect key="frame" x="84" y="7" width="190" height="30"/>
+                                <rect key="frame" x="118" y="7" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -53,7 +59,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <view hidden="YES" clipsSubviews="YES" alpha="0.79999999999999982" tag="99" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IxX-gz-a70">
-                    <rect key="frame" x="45" y="22" width="230" height="525"/>
+                    <rect key="frame" x="284" y="-241" width="230" height="525"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zH-Je-UZt">
@@ -105,6 +111,7 @@
         <image name="favoritos.png" width="24" height="24"/>
         <image name="forward.png" width="24" height="24"/>
         <image name="go.png" width="24" height="24"/>
+        <image name="hamburger.png" width="24" height="24"/>
         <image name="historico.png" width="24" height="24"/>
         <image name="navegar.png" width="24" height="24"/>
         <image name="previous.png" width="24" height="24"/>
